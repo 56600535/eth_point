@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/eth_point/assets/uni.cacc68af.css">
+
+    <meta charset="UTF-8" />
+    <script>
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+    </script>
+    <title>任意点</title>
+    <!--preload-links-->
+		<!-- <script src="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=奶茶&cb=jsonp"></script> -->
+		<script>
+			function updateLocation(){
+				// 添加新的标签
+				let headElement = document.getElementsByTagName('head')[0];
+				let locationScript = document.createElement('script');
+				locationScript.setAttribute('src','https://apis.map.qq.com/ws/location/v1/ip?key=NTRBZ-FBJW3-PIS3G-36PFM-LUMI6-7GF2F&callback=setLocation&output=jsonp')
+				// locationScript.setAttribute('src','https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=啊的&cb=setLocation')
+				headElement.appendChild(locationScript);
+			}
+		</script>
+		<!-- <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/web3/1.3.5/web3.min.js"></script> -->
+		<script src="/eth_point/static/js/web3.min.js"></script>
+		<script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+    <!--app-context-->
+    <script type="module" crossorigin src="/eth_point/assets/index.deeb5326.js"></script>
+    <link rel="stylesheet" href="/eth_point/assets/index.13d2da89.css">
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+    
+  </body>
+	<!-- <script type="text/javascript" src="/static/js/web3.min.js"></script> -->
+</html>
